@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+  <title>GitHub Profile Finder</title>
+  <style>
+    .error {
+      background: red;
+      color: white;
+    }
+
+    .repo-row {
+      border-bottom: 1px dotted pink;
+    }
+
+    .stat-col {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- nav bar -->
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container">
+      <a href="#" class="navbar-brand">GitHub User Finder</a>
+    </div>
+  </nav>
+
+  <!-- form -->
+  <div class="container search-container">
+    <div class="card card-body search-card mt-3">
+      <h1 class="heading">Find GitHub User Profiles</h1>
+      <p class="lead">Enter a username to find his/her profile and latest repos</p>
+      <input type="text" placeholder="Enter username.." id="search-user" class="form-control">
+    </div>
+    <!-- where profile will be shown -->
+    <div id="profile"></div>
+  </div>
+
+  
+
+  <footer class="bg-light text-center mt-5 p-3">
+    GitHub Profile Finder &copy;
+  </footer>
+
+  <!-- script links -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="github.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+
+
+  <!-- canvas -->
+
+</body>
+</html>
